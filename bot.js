@@ -24,10 +24,15 @@ var pics = [
   'fallon1.jpg',
   'fallon2.gif',
   'fallon3.jpg',
-  'fallon4.jpeg'
+  'fallon4.jpg',
+  'fallon5.gif',
+  'fallon6.gif',
+  'fallon7.gif',
+  'fallon8.gif',
+  'fallon9.jpg',
 ];
 
-var stream = T.stream('statuses/filter', {track: '@FallonLaughing'});
+var stream = T.stream('statuses/filter', {track: '@jimmyfallon'});
 
 stream.on('tweet', function(tweet) {
 
