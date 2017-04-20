@@ -2,9 +2,12 @@ var fs = require('fs');
 
 var Twit = require('twit');
 
-var config = require('./config');
-
-var T = new Twit(config);
+var T = new Twit({
+  consumer_key: process.env.consumer_key,
+  consumer_secret: process.env.consumer_secret,
+  access_token: process.env.access_token,
+  access_token_secret: process.env.access_token_secret
+});
 
 // T.get('search/tweets', {
 //  q: 'banana since:2011-07-11',
